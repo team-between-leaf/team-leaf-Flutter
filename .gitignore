@@ -1,0 +1,45 @@
+Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+
+IntelliJ related
+.iml
+.idea/
+
+VS Code related
+.vscode/
+
+Flutter/Dart/Pub related
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.build/
+
+Symbolication related
+app..symbols
+
+Obfuscation related
+app.*.map.json
+
+Android Studio related
+/android/app/debug
+/android/app/profile
+/android/app/release
+
+iOS related
+ios/Flutter/Generated.xcconfig
+ios/Flutter/flutter_export_environment.sh
+ios/Pods/
+
+macOS related
+macos/Pods/
+
+.gitignore 파일에 추가
+linux/
+macos/
+windows/
+web/
