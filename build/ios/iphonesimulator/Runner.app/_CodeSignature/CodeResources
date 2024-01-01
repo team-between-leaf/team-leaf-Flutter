@@ -18,7 +18,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		Nu11EQf3ekqMYEhVjpc9vbCjyng=
+		LZLQ4D+C9hRnI/l10EVZ515l5n4=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Frameworks/App.framework/App</key>
 		<data>
-		p2cGxc0nOxRAhCEKQWXfV5aAF6w=
+		fzooqrbJGQPLJazKqFcTGgAcddk=
 		</data>
 		<key>Frameworks/App.framework/Info.plist</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Frameworks/App.framework/_CodeSignature/CodeResources</key>
 		<data>
-		vsryEMLemZHwuV0Py4Y9xrNHtT4=
+		tnYBo4qr0ZplGWKFGSv0bfEYBig=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.bin</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/NOTICES.Z</key>
 		<data>
-		VznX3L93pC3rTuRSeuDmzihiakY=
+		5FoDewP6jyb55QVbWSMcugbGCBE=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/assets/test_img.jpg</key>
 		<data>
@@ -86,7 +86,7 @@
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/kernel_blob.bin</key>
 		<data>
-		PSmflN/YBVKsbeZWM8aPXzCT/cg=
+		L7lOYdMD7fZxrN4Y0KreLXgqryc=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
 		<data>
@@ -102,7 +102,7 @@
 		</data>
 		<key>Frameworks/Flutter.framework/Flutter</key>
 		<data>
-		i+7Ut1PIR7K27ifMoSVnzaQ6LSQ=
+		7Se+BdWo2aDf+tBA3i/bLe91fxg=
 		</data>
 		<key>Frameworks/Flutter.framework/Headers/Flutter.h</key>
 		<data>
@@ -170,7 +170,7 @@
 		</data>
 		<key>Frameworks/Flutter.framework/Info.plist</key>
 		<data>
-		Gi7xsOHqpgGbN6EXBhmRUpCusyY=
+		S+Kn7WK9ObhdXv0VL6WrMTgWBZg=
 		</data>
 		<key>Frameworks/Flutter.framework/Modules/module.modulemap</key>
 		<data>
@@ -178,11 +178,35 @@
 		</data>
 		<key>Frameworks/Flutter.framework/_CodeSignature/CodeResources</key>
 		<data>
-		FlfJq+vWGNHLlvVvEzjsFw0fanI=
+		vJLVlz+L2OHWGWfZz2QHsWSl55k=
 		</data>
 		<key>Frameworks/Flutter.framework/icudtl.dat</key>
 		<data>
 		Ubat0LvE4LUgCwHeyl0Anx2vnzk=
+		</data>
+		<key>Frameworks/flutter_secure_storage.framework/Info.plist</key>
+		<data>
+		P8Uwbghja28pbSTqQIvPQC+c/+8=
+		</data>
+		<key>Frameworks/flutter_secure_storage.framework/_CodeSignature/CodeResources</key>
+		<data>
+		TawyXRgOaBJ1+smy2v4Ab5ZeEHs=
+		</data>
+		<key>Frameworks/flutter_secure_storage.framework/flutter_secure_storage</key>
+		<data>
+		OPOO0KVOSPOv8U9mTDREpSdO1zQ=
+		</data>
+		<key>Frameworks/path_provider_foundation.framework/Info.plist</key>
+		<data>
+		jDRf8wKIVG/U/O0SSg6srD8qMl8=
+		</data>
+		<key>Frameworks/path_provider_foundation.framework/_CodeSignature/CodeResources</key>
+		<data>
+		v9iMILrn+XqiCTWqqiehqvo2+XU=
+		</data>
+		<key>Frameworks/path_provider_foundation.framework/path_provider_foundation</key>
+		<data>
+		idzNks2Txx5RD5PSvpdr0VgaFdc=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -220,7 +244,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fvC/7dzXXtUvDoBNyA2pR1YrI9lxnymyfaNhOM8uJVs=
+			fHdz53vVQvOCRmPe/0OB7kpjsfZjhRHAH5WWmzr7bxo=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
@@ -269,7 +293,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			yVnioMRPV1rS7oSsHucb8h3W4d9Qdizd9TkQ7Vfqdo0=
+			Ub3HFfbfnXI2uNBxY8hIJbfqFHBopSeAmDVwUnz3XpY=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/Info.plist</key>
@@ -283,7 +307,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			b8JQ/+Z7RDRZOpmjgrH8eRRkf7O8Xh+IdKqNIy7WqXY=
+			f30SKilOnzXT6Ni5c6ftjH1oIvQ6KwBYrAS40bl7XEw=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.bin</key>
@@ -311,7 +335,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			eus3p+jbEZdoCovP11hDY7hDqvx4xNOHF+zkjp1BRhY=
+			1Wyie2SolR1ZShFVZ0axML1tM1p+I0XkxHqfYX8ASgA=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/assets/test_img.jpg</key>
@@ -339,7 +363,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cW0oZiYwRpjOK7fTAxJ/Exs22nYTVfhq+G9TBS/NdPU=
+			oXvwZHM//SYFVW04aYb4hvJydQPmkJQRDR6xasU2Kd8=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
@@ -367,7 +391,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			k/+V4GZnlxbsmpwQ3ddD4rHhMON42oQNTni99oU4SRE=
+			4mPH0c6U+Ljc4HoRAeQ3wYdvK7tUq6kDEV1336dIidk=
 			</data>
 		</dict>
 		<key>Frameworks/Flutter.framework/Headers/Flutter.h</key>
@@ -486,7 +510,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9xnSVhULqhkohsAFYJSTqWZUbYZJqjnMmqnaoW9g3HY=
+			1z6Wj/jvEPkJpyzSHOTJCOlg4EfZ+36/eKqh9TSqmkU=
 			</data>
 		</dict>
 		<key>Frameworks/Flutter.framework/Modules/module.modulemap</key>
@@ -500,7 +524,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+PcgiyAWDH2c0KpTzBo7BUZ2QZgL/z4Q7WhDCH8YPXU=
+			tbjzpn8kUw7uT8h+CqqSmjGK1IfUUch2C9Z8pBnYin0=
 			</data>
 		</dict>
 		<key>Frameworks/Flutter.framework/icudtl.dat</key>
@@ -508,6 +532,48 @@
 			<key>hash2</key>
 			<data>
 			ZepykIMSjfzhwAcmupMrkaqvXkhza1ZE3TdHjl8odaw=
+			</data>
+		</dict>
+		<key>Frameworks/flutter_secure_storage.framework/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			HMJxm/Sw3qajpdkXVS6CZ7BNct8fgv30Mwo4MIeWXFs=
+			</data>
+		</dict>
+		<key>Frameworks/flutter_secure_storage.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			9V/egt+IUfUlVhSwhh1+5rq+TKCKVIOBevFxtu/ymyU=
+			</data>
+		</dict>
+		<key>Frameworks/flutter_secure_storage.framework/flutter_secure_storage</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Yu7snpBn2MC1WrUuvg3KW9Rv3tehZmVMB6XMidBnOKo=
+			</data>
+		</dict>
+		<key>Frameworks/path_provider_foundation.framework/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			OBea7e958pb5ZWMG3wmlh0C6U8IuttahCYnLlCO/poo=
+			</data>
+		</dict>
+		<key>Frameworks/path_provider_foundation.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			W+XaytZGYLtPLk7ddjWo/69GmfAKOUHLAIVzo8Ir/Pc=
+			</data>
+		</dict>
+		<key>Frameworks/path_provider_foundation.framework/path_provider_foundation</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			crbAztG/PX7Ij7IUSZ0to6H+Om7/XfMvxpjF4MulY2o=
 			</data>
 		</dict>
 	</dict>
