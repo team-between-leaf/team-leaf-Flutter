@@ -1,5 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:team_between_leaf/login/login_detail/SocialLoginWidget.dart';
+import 'package:team_between_leaf/login/login_detail/UserAuthControls.dart';
 
 class loginDart extends StatefulWidget {
   const loginDart({
@@ -101,108 +103,11 @@ class _loginDartState extends State<loginDart> {
                         Text('자동 로그인'),
                       ],
                     ),
-                    // ---------- 체크 박스 만들기 끝 ------------
-                    // 로그인 버튼
-                    Padding(
-                      padding: EdgeInsets.only(top: 60),
-                    ),
-                    TextButton(
-                      style: TextButton.styleFrom(
-                        backgroundColor: Colors.transparent,
-                        minimumSize:
-                            Size(double.infinity, 64), // 버튼의 최소 사이즈를 지정합니다.
-                        shape: RoundedRectangleBorder(
-                          borderRadius:
-                              BorderRadius.circular(50), // 버튼의 둥근 모서리를 지정합니다.
-                          side: BorderSide(
-                            color: Colors.black,
-                          ),
-                        ),
-                      ),
-                      onPressed: () {
-                        // 버튼 탭 시 실행할 코드
-                      },
-                      child:
-                          Text(' 로그인', style: TextStyle(color: Colors.black)),
-                    ),
 
-                    // 로그인 버튼 끝
-                    // 아이디 비번 회원가입 텍스트
-
-                    Row(
-                      // 이거 채현개발자님이 중앙이 아닌것 같다고 해서 주석 처리 합니다.
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        TextButton(onPressed: () => 1, child: Text('아이디 찾기')),
-                        SizedBox(
-                          height: 20, // VerticalDivider의 높이를 지정
-                          child: VerticalDivider(
-                            color: Colors.black, // 구분선 색상
-                            thickness: 1, // 구분선 두께
-                          ),
-                        ),
-                        TextButton(onPressed: () => 1, child: Text('비밀번호 찾기')),
-                        SizedBox(
-                          height: 20,
-                          child: VerticalDivider(
-                            color: Colors.black,
-                            thickness: 1,
-                          ),
-                        ),
-                        TextButton(onPressed: () => 1, child: Text('회원가입')),
-                      ],
-                    ),
-                    // 여기까지 //
-                    Padding(padding: EdgeInsets.only(top: 70)),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Flexible(
-                          flex: 1,
-                          child: Divider(
-                            color: Colors.black,
-                            thickness: 1,
-                          ),
-                        ),
-                        Text(
-                          '  sns로 간편 로그인하기  ',
-                        ),
-                        Flexible(
-                          flex: 1,
-                          child: Divider(
-                            color: Colors.black,
-                            thickness: 1,
-                          ),
-                        ),
-                      ],
-                    ),
-                    Padding(padding: EdgeInsets.only(top: 10)),
-
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        TextButton(
-                          onPressed: () => 1,
-                          child: CircleAvatar(radius: 21),
-                        ),
-                        TextButton(
-                          onPressed: () => 1,
-                          child: CircleAvatar(radius: 21),
-                        ),
-                        TextButton(
-                          onPressed: () => 1,
-                          child: CircleAvatar(radius: 21),
-                        ),
-                        TextButton(
-                          onPressed: () => 1,
-                          child: CircleAvatar(radius: 21),
-                        ),
-                        TextButton(
-                          onPressed: () => 1,
-                          child: CircleAvatar(radius: 21),
-                        ),
-                      ],
-                    ),
+                    const Padding(padding: EdgeInsets.only(top: 60)),
+                    const UserAuthControls(), // 로그인, 아이디비번 찾기, 회원가입
+                    const Padding(padding: EdgeInsets.only(top: 70)),
+                    const SocialLoginWidget(), // 소셜 로그인
                   ],
                 ),
               ),
