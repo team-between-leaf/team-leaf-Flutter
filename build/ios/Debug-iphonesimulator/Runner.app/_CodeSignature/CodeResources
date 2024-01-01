@@ -46,7 +46,7 @@
 		</data>
 		<key>Frameworks/App.framework/App</key>
 		<data>
-		tPPIY7MykbZlf+QfyJg7Jv6gIH0=
+		vu77Ocrw9R9LCMLncF3d65zBCYU=
 		</data>
 		<key>Frameworks/App.framework/Info.plist</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Frameworks/App.framework/_CodeSignature/CodeResources</key>
 		<data>
-		OLEfEWbvPdM6b3aKEAT9vtQJdqA=
+		TIAoAUVBYt0RHqPIpkL38GfUZ6E=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.bin</key>
 		<data>
@@ -86,7 +86,7 @@
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/kernel_blob.bin</key>
 		<data>
-		wMXhk1QaIsKkvCioHgmAqON6lgY=
+		648fyaIlbz7pz/ZLOSDHHIVMh9s=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
 		<data>
@@ -194,7 +194,7 @@
 		</data>
 		<key>Frameworks/flutter_secure_storage.framework/flutter_secure_storage</key>
 		<data>
-		OPOO0KVOSPOv8U9mTDREpSdO1zQ=
+		564XyZxq/7x84dy4i5OPFT1c8Lw=
 		</data>
 		<key>Frameworks/path_provider_foundation.framework/Info.plist</key>
 		<data>
@@ -206,7 +206,7 @@
 		</data>
 		<key>Frameworks/path_provider_foundation.framework/path_provider_foundation</key>
 		<data>
-		idzNks2Txx5RD5PSvpdr0VgaFdc=
+		kPuXogjZvWZ4qyYRCyoExnRgXCA=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -293,7 +293,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Y7jUkH7f8Yg1uYp8GeCz6hWToWyKOk6nedbCvYcovZU=
+			H3zPDIMuIzbR11uQKdTi4CIvOoJ8vct7k6UsU+wf+xc=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/Info.plist</key>
@@ -307,7 +307,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fzrS2/o5rme+czX0cw5r16UA7zODvUiJYtQpzDazwFQ=
+			823f1QmpKdyDplMr64OGAD3POwoaxKKXP/Ir1d8M4Ls=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.bin</key>
@@ -363,7 +363,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			I0hE8kpsE8BfQK6dfxYemgWe0/rtSqR1ZhJvfVGhAF8=
+			v61J6V/mmYfSQV3ToJUk5/kbE721vFLFRJsd4iHf6lo=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
@@ -552,7 +552,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Yu7snpBn2MC1WrUuvg3KW9Rv3tehZmVMB6XMidBnOKo=
+			vr7nKCpwY2EOeeDKcfFUux1XtFqk6jCSEl6qcbaDnGo=
 			</data>
 		</dict>
 		<key>Frameworks/path_provider_foundation.framework/Info.plist</key>
@@ -573,7 +573,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			crbAztG/PX7Ij7IUSZ0to6H+Om7/XfMvxpjF4MulY2o=
+			w8KkV/ubKOKvsD9gFlfXOSyg/5qrOF8RW3APy/ZhGOA=
 			</data>
 		</dict>
 	</dict>
