@@ -45,7 +45,11 @@ class UserAuthControls extends StatelessWidget {
                 thickness: 1,
               ),
             ),
-            TextButton(onPressed: () => 1, child: const Text('회원가입')),
+            TextButton(
+              child: const Text('회원가입'),
+              onPressed: () =>
+                  Navigator.pushNamed(context, '/JoinMembershipPage'),
+            ),
           ],
         ),
       ],
