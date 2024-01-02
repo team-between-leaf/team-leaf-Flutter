@@ -37,23 +37,38 @@ class SocialLoginWidget extends StatelessWidget {
           children: [
             TextButton(
               onPressed: () => 1,
-              child: const CircleAvatar(radius: 21),
+              child: const CircleAvatar(
+                radius: 21,
+                backgroundColor: Colors.black,
+              ),
             ),
             TextButton(
               onPressed: () => 1,
-              child: const CircleAvatar(radius: 21),
+              child: const CircleAvatar(
+                radius: 21,
+                backgroundColor: Colors.black,
+              ),
             ),
             TextButton(
               onPressed: () => 1,
-              child: const CircleAvatar(radius: 21),
+              child: const CircleAvatar(
+                radius: 21,
+                backgroundColor: Colors.black,
+              ),
             ),
             TextButton(
               onPressed: () => 1,
-              child: const CircleAvatar(radius: 21),
+              child: const CircleAvatar(
+                radius: 21,
+                backgroundColor: Colors.black,
+              ),
             ),
             TextButton(
               onPressed: () => 1,
-              child: const CircleAvatar(radius: 21),
+              child: const CircleAvatar(
+                radius: 21,
+                backgroundColor: Colors.black,
+              ),
             ),
           ],
         ),

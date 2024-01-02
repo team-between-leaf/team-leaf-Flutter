@@ -20,7 +20,7 @@ class _LogInDartState extends State<LogInDart> {
       decoration: const BoxDecoration(
         image: DecorationImage(
             image: AssetImage(
-              'assets/test_img.jpg', // 배경화면 이미지 입니다.
+              'assets/test_3.png', // 배경화면 이미지 입니다.
             ),
             fit: BoxFit.cover),
       ),
