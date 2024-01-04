@@ -19,10 +19,10 @@ class _JoinMembershipPageState extends State<JoinMembershipPage> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.start,
-            children:[
+            children: [
               RequiredInformation(), //  필수 정보 (이메일 주소, 비밀번호, 이름, 휴대폰 번호)
               SelectionInformation(), // 선택 정보 (주소, 생년월일)
-            ],       
+            ],
           ),
         ),
       ),
