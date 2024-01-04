@@ -26,24 +26,27 @@ class _LogInDartState extends State<LogInDart> {
       ),
       child: const Scaffold(
         backgroundColor: Colors.transparent,
-        body: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              LogoImage(),
-              Padding(
-                padding: EdgeInsets.all(28.0),
-                child: InputLogIn(),
-              ),
-              Padding(
-                padding: EdgeInsets.all(28.0),
-                child: UserAuthControls(), // 로그인, 아이디비번 찾기, 회원가입
-              ),
-              Padding(
-                padding: EdgeInsets.all(28.0),
-                child: SocialLoginWidget(),
-              )
-            ],
+        body: SingleChildScrollView(
+          padding: EdgeInsets.only(top: 150),
+          child: Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                LogoImage(),
+                Padding(
+                  padding: EdgeInsets.all(28.0),
+                  child: InputLogIn(),
+                ),
+                Padding(
+                  padding: EdgeInsets.all(28.0),
+                  child: UserAuthControls(), // 로그인, 아이디비번 찾기, 회원가입
+                ),
+                Padding(
+                  padding: EdgeInsets.all(28.0),
+                  child: SocialLoginWidget(),
+                )
+              ],
+            ),
           ),
         ),
       ),

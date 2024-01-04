@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:team_between_leaf/join_membership/join_membership_detail/selection_information.dart';
 import 'package:team_between_leaf/text_widgets.dart';
 
 class JoinMembershipPage extends StatefulWidget {
@@ -69,23 +70,7 @@ class _JoinMembershipPageState extends State<JoinMembershipPage> {
                       border: OutlineInputBorder(), hintText: '인증번호 입력'),
                 ),
               ),
-              address(),
-              const TextField(
-                decoration: InputDecoration(
-                    border: OutlineInputBorder(), hintText: '주소'),
-              ),
-              const Padding(
-                padding: EdgeInsets.only(top: 10, bottom: 30),
-                child: TextField(
-                  decoration: InputDecoration(
-                      border: OutlineInputBorder(), hintText: '상세 주소입력'),
-                ),
-              ),
-              birth(),
-              const TextField(
-                decoration: InputDecoration(
-                    border: OutlineInputBorder(), hintText: '생년월일'),
-              )
+              const SelectionInformation(), // 선택 정보 ( 주소, 생년월일)
             ],
           ),
         ),

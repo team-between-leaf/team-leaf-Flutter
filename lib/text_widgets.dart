@@ -35,7 +35,7 @@ Widget name() {
 
 Widget phoneNumner() {
   return const Text(
-    '휴대폰 번호',
+    '휴대폰 번호*',
     style: TextStyle(fontSize: 16),
   );
 }
