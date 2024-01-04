@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:team_between_leaf/join_membership/join_membership_detail/required_information.dart';
-import 'package:team_between_leaf/join_membership/join_membership_detail/selection_information.dart';
+import 'package:team_between_leaf/join_membership/join_membership_detail/jmd_required_information.dart';
+import 'package:team_between_leaf/join_membership/join_membership_detail/jmd_selection_information.dart';
 
 class JoinMembershipPage extends StatefulWidget {
   const JoinMembershipPage({super.key});

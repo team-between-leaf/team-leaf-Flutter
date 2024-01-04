@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:team_between_leaf/login/login_detail/check_box.dart';
+import 'package:team_between_leaf/login/login_detail/ld_check_box.dart';
 
 class InputLogIn extends StatelessWidget {
   const InputLogIn({
