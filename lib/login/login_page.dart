@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:team_between_leaf/login/login_detail/input_login.dart';
-import 'package:team_between_leaf/login/login_detail/logo_image.dart';
-import 'package:team_between_leaf/login/login_detail/social_login_widget.dart';
-import 'package:team_between_leaf/login/login_detail/user_auth_controls.dart.dart';
+import 'package:team_between_leaf/login/login_detail/ld_input_login.dart';
+import 'package:team_between_leaf/login/login_detail/ld_logo_image.dart';
+import 'package:team_between_leaf/login/login_detail/ld_social_login_widget.dart';
+import 'package:team_between_leaf/login/login_detail/ld_user_auth_controls.dart.dart';
 
 class LogInDart extends StatefulWidget {
   const LogInDart({
