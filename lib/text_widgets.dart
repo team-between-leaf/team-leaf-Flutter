@@ -53,3 +53,10 @@ Widget birth() {
     style: TextStyle(fontSize: 16),
   );
 }
+
+Widget sns(){
+  return const Text(
+    '  sns로 간편 로그인하기  ',
+    style: TextStyle(fontSize: 16),
+    );
+}
