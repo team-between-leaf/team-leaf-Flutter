@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:team_between_leaf/text_widgets.dart';
+import 'package:team_between_leaf/core_services/text_widgets.dart';
 
 class RequiredInformation extends StatelessWidget {
   const RequiredInformation({
