@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:team_between_leaf/text_widgets.dart';
 
 class SocialLoginWidget extends StatelessWidget {
   const SocialLoginWidget({
@@ -9,20 +10,18 @@ class SocialLoginWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        const Row(
+        Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Flexible(
+            const Flexible(
               flex: 1,
               child: Divider(
                 color: Colors.black,
                 thickness: 1,
               ),
             ),
-            Text(
-              '  sns로 간편 로그인하기  ',
-            ),
-            Flexible(
+            sns(),
+            const Flexible(
               flex: 1,
               child: Divider(
                 color: Colors.black,
