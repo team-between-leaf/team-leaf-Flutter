@@ -33,9 +33,9 @@ class SelectionInformation extends StatelessWidget {
           ),
           birth(), // 생년월일
           const TextField(
-            decoration:
-                InputDecoration(border: OutlineInputBorder(), hintText: '생년월일'),
-          )
+              decoration: InputDecoration(
+                  border: OutlineInputBorder(), hintText: '생년월일'),
+              keyboardType: TextInputType.phone),
         ],
       ),
     );
