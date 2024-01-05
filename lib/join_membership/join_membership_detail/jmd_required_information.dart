@@ -15,7 +15,6 @@ class _RequiredInformationState extends State<RequiredInformation> {
   final FocusNode _passwordcheckFocusNode = FocusNode();
   final FocusNode _nameFocusNode = FocusNode();
   final FocusNode _phoneFocusNode = FocusNode();
-  final FocusNode _authnumberFocusNode = FocusNode();
 
   @override
   void dispose() {
@@ -23,7 +22,6 @@ class _RequiredInformationState extends State<RequiredInformation> {
     _passwordcheckFocusNode.dispose();
     _nameFocusNode.dispose();
     _phoneFocusNode.dispose();
-    _authnumberFocusNode.dispose();
     super.dispose();
   }
 
@@ -82,16 +80,12 @@ class _RequiredInformationState extends State<RequiredInformation> {
                 border: OutlineInputBorder(), hintText: "'-' 구분없이 입력"),
             textInputAction: TextInputAction.next,
             keyboardType: TextInputType.phone,
-            onFieldSubmitted: (value) =>
-                FocusScope.of(context).requestFocus(_phoneFocusNode),
           ),
           const SizedBox(height: 10),
           TextFormField(
-            focusNode: _authnumberFocusNode,
             decoration: const InputDecoration(
                 border: OutlineInputBorder(), hintText: '인증번호 입력'),
             keyboardType: TextInputType.phone,
-            textInputAction: TextInputAction.next,
           ),
         ],
       ),
