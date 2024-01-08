@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:team_between_leaf/core_services/text_widgets.dart';
+import 'package:team_between_leaf/core_services/verify_form.dart';
 
 class RequiredInformation extends StatefulWidget {
   const RequiredInformation({
@@ -15,6 +16,7 @@ class _RequiredInformationState extends State<RequiredInformation> {
   final FocusNode _passwordcheckFocusNode = FocusNode();
   final FocusNode _nameFocusNode = FocusNode();
   final FocusNode _phoneFocusNode = FocusNode();
+  final _formKey = GlobalKey<FormState>(); // 폼 키 추가
 
   @override
   void dispose() {
@@ -29,65 +31,79 @@ class _RequiredInformationState extends State<RequiredInformation> {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 10),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          const SizedBox(height: 80),
-          email(),
-          TextFormField(
-            decoration: const InputDecoration(
-                border: OutlineInputBorder(), hintText: '이메일 주소'),
-            keyboardType: TextInputType.emailAddress, // 키보드 타입 지정
-            onFieldSubmitted: (value) {
-              FocusScope.of(context).requestFocus(_passwordFocusNode);
-            },
-          ),
-          const SizedBox(height: 30),
-          password(),
-          TextFormField(
-            focusNode: _passwordFocusNode,
-            decoration: const InputDecoration(
-                border: OutlineInputBorder(), hintText: '비밀번호'),
-            textInputAction: TextInputAction.next,
-            onFieldSubmitted: (value) =>
-                FocusScope.of(context).requestFocus(_passwordcheckFocusNode),
-          ),
-          const SizedBox(height: 10),
-          TextFormField(
-            focusNode: _passwordcheckFocusNode,
-            decoration: const InputDecoration(
-                border: OutlineInputBorder(), hintText: '비밀번호 확인'),
-            onFieldSubmitted: (value) =>
-                FocusScope.of(context).requestFocus(_nameFocusNode),
-          ),
-          const SizedBox(height: 3),
-          passwordValidationNotice(),
-          const SizedBox(height: 3),
-          name(),
-          TextFormField(
-            focusNode: _nameFocusNode,
-            decoration: const InputDecoration(
-                border: OutlineInputBorder(), hintText: '이름을 입력하세요'),
-            onFieldSubmitted: (value) =>
-                FocusScope.of(context).requestFocus(_phoneFocusNode),
-          ),
-          const SizedBox(height: 30),
-          phoneNumner(),
-          TextFormField(
-            focusNode: _phoneFocusNode,
-            decoration: const InputDecoration(
-                border: OutlineInputBorder(), hintText: "'-' 구분없이 입력"),
-            textInputAction: TextInputAction.next,
-            keyboardType: TextInputType.phone,
-          ),
-          const SizedBox(height: 10),
-          TextFormField(
-            decoration: const InputDecoration(
-                border: OutlineInputBorder(), hintText: '인증번호 입력'),
-            keyboardType: TextInputType.phone,
-          ),
-        ],
+      child: Form(
+        key: _formKey, // 폼 키 할당
+
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            const SizedBox(height: 80),
+            email(),
+            TextFormField(
+                decoration: const InputDecoration(
+                    border: OutlineInputBorder(), hintText: '이메일 주소'),
+                validator: (value) {
+                  if (value == null || value.isEmpty) {
+                    return '이메일 주소를 입력해주세요.';
+                  } else if (!emailRegExp.hasMatch(value)) {
+                    return '유효한 이메일 주소가 아닙니다.';
+                  }
+                  return null; // 입력이 유효할 경우 null 반환
+                },
+                onFieldSubmitted: (value) {
+                  // 유효성 검사 수행
+                  if (_formKey.currentState!.validate()) {
+                    // 유효하면 다음 필드로 포커스 이동
+                    FocusScope.of(context).requestFocus(_passwordFocusNode);
+                  }
+                }),
+            const SizedBox(height: 30),
+            password(),
+            TextFormField(
+              focusNode: _passwordFocusNode,
+              decoration: const InputDecoration(
+                  border: OutlineInputBorder(), hintText: '비밀번호'),
+              textInputAction: TextInputAction.next,
+              onFieldSubmitted: (value) =>
+                  FocusScope.of(context).requestFocus(_passwordcheckFocusNode),
+            ),
+            const SizedBox(height: 10),
+            TextFormField(
+              focusNode: _passwordcheckFocusNode,
+              decoration: const InputDecoration(
+                  border: OutlineInputBorder(), hintText: '비밀번호 확인'),
+              onFieldSubmitted: (value) =>
+                  FocusScope.of(context).requestFocus(_nameFocusNode),
+            ),
+            const SizedBox(height: 3),
+            passwordValidationNotice(),
+            const SizedBox(height: 3),
+            name(),
+            TextFormField(
+              focusNode: _nameFocusNode,
+              decoration: const InputDecoration(
+                  border: OutlineInputBorder(), hintText: '이름을 입력하세요'),
+              onFieldSubmitted: (value) =>
+                  FocusScope.of(context).requestFocus(_phoneFocusNode),
+            ),
+            const SizedBox(height: 30),
+            phoneNumner(),
+            TextFormField(
+              focusNode: _phoneFocusNode,
+              decoration: const InputDecoration(
+                  border: OutlineInputBorder(), hintText: "'-' 구분없이 입력"),
+              textInputAction: TextInputAction.next,
+              keyboardType: TextInputType.phone,
+            ),
+            const SizedBox(height: 10),
+            TextFormField(
+              decoration: const InputDecoration(
+                  border: OutlineInputBorder(), hintText: '인증번호 입력'),
+              keyboardType: TextInputType.phone,
+            ),
+          ],
+        ),
       ),
     );
   }
