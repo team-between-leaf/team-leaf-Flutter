@@ -33,31 +33,30 @@ class _RequiredInformationState extends State<RequiredInformation> {
       padding: const EdgeInsets.symmetric(vertical: 10),
       child: Form(
         key: _formKey, // 폼 키 할당
-
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const SizedBox(height: 80),
             email(),
             TextFormField(
-                decoration: const InputDecoration(
-                    border: OutlineInputBorder(), hintText: '이메일 주소'),
-                validator: (value) {
-                  if (value == null || value.isEmpty) {
-                    return '이메일 주소를 입력해주세요.';
-                  } else if (!emailRegExp.hasMatch(value)) {
-                    return '유효한 이메일 주소가 아닙니다.';
-                  }
-                  return null; // 입력이 유효할 경우 null 반환
-                },
-                onFieldSubmitted: (value) {
-                  // 유효성 검사 수행
-                  if (_formKey.currentState!.validate()) {
-                    // 유효하면 다음 필드로 포커스 이동
-                    FocusScope.of(context).requestFocus(_passwordFocusNode);
-                  }
-                }),
+              decoration: const InputDecoration(
+                  border: OutlineInputBorder(), hintText: '이메일 주소'),
+              validator: (value) {
+                if (value == null || value.isEmpty) {
+                  return '이메일 주소를 입력해주세요.';
+                } else if (!emailRegExp.hasMatch(value)) {
+                  return '유효한 이메일 주소가 아닙니다.';
+                }
+                return null; // 입력이 유효할 경우 null 반환
+              },
+              onFieldSubmitted: (value) {
+                // 유효성 검사 수행
+                if (_formKey.currentState!.validate()) {
+                  // 유효하면 다음 필드로 포커스 이동
+                  FocusScope.of(context).requestFocus(_passwordFocusNode);
+                }
+              },
+            ),
             const SizedBox(height: 30),
             password(),
             TextFormField(
