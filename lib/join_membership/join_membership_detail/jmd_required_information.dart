@@ -12,18 +12,32 @@ class RequiredInformation extends StatefulWidget {
 }
 
 class _RequiredInformationState extends State<RequiredInformation> {
-  final FocusNode _passwordFocusNode = FocusNode();
-  final FocusNode _passwordcheckFocusNode = FocusNode();
-  final FocusNode _nameFocusNode = FocusNode();
-  final FocusNode _phoneFocusNode = FocusNode();
+  final FocusNode _passwordFocusNode = FocusNode(); // 비밀번호로 이동
+  final FocusNode _passwordcheckFocusNode = FocusNode(); // 비밀번호 확인으로 이동
+  final FocusNode _nameFocusNode = FocusNode(); // 이름으로 이동
+  final FocusNode _phoneFocusNode = FocusNode(); // 핸드폰 번호로 이동
   final _formKey = GlobalKey<FormState>(); // 폼 키 추가
+  final FocusNode _emailcheck = FocusNode();
+
+  @override
+  void initState() {
+    super.initState();
+    _emailcheck.addListener(() {
+      if (!_emailcheck.hasFocus) {
+        // 이메일 필드에서 포커스가 벗어났을 때 유효성 검사를 수행
+        _formKey.currentState?.validate();
+      }
+    });
+  }
 
   @override
   void dispose() {
+    // 초기화
     _passwordFocusNode.dispose();
     _passwordcheckFocusNode.dispose();
     _nameFocusNode.dispose();
     _phoneFocusNode.dispose();
+    _emailcheck.dispose();
     super.dispose();
   }
 
@@ -39,6 +53,7 @@ class _RequiredInformationState extends State<RequiredInformation> {
             const SizedBox(height: 80),
             email(),
             TextFormField(
+              focusNode: _emailcheck,
               decoration: const InputDecoration(
                   border: OutlineInputBorder(), hintText: '이메일 주소'),
               validator: (value) {
