@@ -5,3 +5,11 @@ RegExp emailRegExp = RegExp(
   caseSensitive: false,
   multiLine: false,
 );
+
+
+RegExp passwordRegExp = RegExp(
+  r'^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%#?&])[A-Za-z\d@$!%*#?&]{8,21}$',
+  caseSensitive: true, // 대문자 판별 필요
+  multiLine: false,
+);
+
